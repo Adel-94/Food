@@ -245,7 +245,7 @@ a {
     border-bottom: 3px solid #ef4836;
     font-size: 20px;
     margin-bottom: 30px;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     padding: 0 0 15px 0;
     text-transform: uppercase;
 }
@@ -714,21 +714,21 @@ a {
     transform: translateY(-25%);
 }
 .slide-1 {
-    background: url(../images/slide1.jpg);
+    background: url(../img/slide1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 .slide-2 {
-    background: url(../images/slide2.jpg);
+    background: url(../img/slide2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 .slide-3 {
-    background: url(../images/slide3.jpg);
+    background: url(../img/slide3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -855,7 +855,7 @@ a {
     border-radius: 5%;
     position: relative;
     overflow: hidden;
-    height:360px;
+    height:auto;
 }
 .bd-food-price {
     background: #f32a2a;
@@ -875,12 +875,13 @@ a {
     margin-bottom: 0;
 }
 .bd-food-details {
+    border-radius: 5%;
     position: absolute;
-    top:360px;
+    top:362px;
     left: 0;
     width: 100%;
     padding: 0 20px;
-    height: 360px;
+    height: 362px;
     background: rgba(243,42,42, 0.8);
     
     -webkit-transition: all 0.5s ease-in-out;
@@ -890,6 +891,7 @@ a {
     transition: all 0.5s ease-in-out;
 }
 .bd-item-col:hover .bd-food-details {
+    border-radius: 5%;
     top:0px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -916,7 +918,7 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/parallax.jpg");
+    background-image: url("../img/parallax.jpg");
     position: relative;
     width: 100%;
 }
@@ -959,7 +961,7 @@ a {
 .bd-video-area {
     padding: 150px 0;
     position: relative;
-    background: url(../images/cook.jpg);
+    background: url(../img/cook.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1150,6 +1152,8 @@ a {
 }
 
 .blog .blog-box .blog-post .image:hover .overly {
+     border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     transform: translateY(0%);
 }
 
@@ -1483,6 +1487,12 @@ a {
     padding: 6px 16px;
     height: 45px;
 }
+.fixed {
+    position: fixed;
+    top: -20px;
+    transition: all 0.8s ease;
+}
+
 
 .warpper-blog .blog-sidber .recent-post ul > li {
     border-bottom: 1px solid #F0F0F0;
@@ -1607,6 +1617,45 @@ a {
 .warpper-blog .blog-sidber .contact-details .contact-info > address > ul > li > b {
     color: #535353;
 }
+
+/*Recent POst Starts----*/
+
+.warpper-blog .blog-sidber .recent-post ul > li {
+    border-bottom: 1px solid #F0F0F0;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    overflow: hidden;
+    padding: 10px 0px 20px;
+    position: relative;
+}
+
+.warpper-blog .blog-sidber .recent-post ul > li > a > img {
+    float: left;
+    padding: 0px 10px 0px 0px;
+    width: 120px;
+}
+
+.warpper-blog .blog-sidber .recent-post ul > li > h6 {
+    font-size: 13px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.warpper-blog .blog-sidber .recent-post ul > li > h6 > a{
+    color: #999;
+}
+
+.warpper-blog .blog-sidber .recent-post ul > li > h6 > a:hover ,
+.warpper-blog .blog-sidber .category .cate-list > li > a:hover{
+    color: #ef4836;
+}
+
+.warpper-blog .blog-sidber .recent-post ul > li > span{
+    color: #ef4836;
+}
+/*Recent POst Ends----*/
+
 /* End Single Blog Page */
 
 
